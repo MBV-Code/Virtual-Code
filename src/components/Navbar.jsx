@@ -16,11 +16,11 @@ export function Navbar () {
 
   return (
     <>
-      <button onClick={() => setIsOpen(!isOpen)} className='w-3 h-3 fixed top-3 left-3 z-10'>
-        <Logo className='w-20 sm:w-auto' />
+      <button onClick={() => setIsOpen(!isOpen)} className='w-3 h-3 fixed sm:top-3 sm:left-3 z-50'>
+        <Logo className='w-auto' />
       </button>
 
-      <nav className={`grid fixed top-0 left-0 z-10 w-64 h-screen transition-transform ${showClass}`}>
+      <nav className={`grid fixed top-0 left-0 z-[60] w-64 h-screen transition-transform ${showClass}`}>
         <div className='h-full px-3 py-4 overflow-y-auto dark:bg-zinc-950'>
           <button onClick={() => setIsOpen(!isOpen)} className='w-full flex justify-center mb-5'>
             <Logo />
