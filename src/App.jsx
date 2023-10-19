@@ -4,6 +4,7 @@ import { HomePage } from './pages/Home'
 import { AboutPage } from './pages/About'
 import { SalePage } from './pages/Sale'
 import { CoursePage } from './pages/Course'
+import { NotFoundPage } from './pages/NotFound'
 
 function App () {
   return (
@@ -14,6 +15,7 @@ function App () {
         <Route path='about' element={<AboutPage />} />
         <Route path='sale' element={<SalePage />} />
         <Route path='course' element={<CoursePage />} />
+        <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
   )

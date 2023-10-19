@@ -11,7 +11,7 @@ const links = [
 ]
 
 export function Navbar () {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   const showClass = isOpen ? 'translate-x-0' : '-translate-x-full'
 
   return (
